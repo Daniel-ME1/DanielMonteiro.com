@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Meu Portfólio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background-color: #121212; color: #e0e0e0; padding: 20px; }
+        header { max-width: 900px; margin: 40px auto; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #222; padding-bottom: 20px; }
+        nav a { color: #888; text-decoration: none; margin-left: 20px; transition: 0.3s; }
+        nav a:hover { color: #fff; }
+        .logo { font-size: 20px; font-weight: bold; color: #fff; text-decoration: none; }
+        .hero { max-width: 900px; margin: 0 auto 60px auto; }
+        .hero h1 { font-size: 36px; color: #fff; margin-bottom: 15px; }
+        .hero p { font-size: 18px; color: #aaa; line-height: 1.6; }
+        .grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: #1c1c1c; border-radius: 8px; overflow: hidden; border: 1px solid #2d2d2d; transition: transform 0.2s; text-decoration: none; color: inherit; }
+        .card:hover { transform: translateY(-5px); border-color: #444; }
+        .card-img { width: 100%; height: 180px; background: #333; display: flex; align-items: center; justify-content: center; color: #555; font-weight: bold; }
+        .card-content { padding: 20px; }
+        .card-title { font-size: 18px; color: #fff; margin-bottom: 8px; }
+        .card-desc { font-size: 14px; color: #aaa; line-height: 1.4; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">O Seu Nome</a>
+        <nav>
+            <a href="#">Projetos</a>
+            <a href="#">Sobre Mim</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Olá, eu sou o [Seu Nome].</h1>
+        <p>Sou estudante de Engenharia. Gosto de desenhar, construir e resolver problemas reais.</p>
+    </section>
+
+    <main class="grid">
+        <!-- Cartão de Projeto 1 -->
+        <a href="#" class="card">
+            <div class="card-img">IMAGEM DO PROJETO 1</div>
+            <div class="card-content">
+                <div class="card-title">Caixa de Velocidades FSAE</div>
+                <div class="card-desc">Desenho mecânico e simulação de fadiga para protótipo de competição.</div>
+            </div>
+        </a>
+
+        <!-- Cartão de Projeto 2 -->
+        <a href="#" class="card">
+            <div class="card-img">IMAGEM DO PROJETO 2</div>
+            <div class="card-content">
+                <div class="card-title">Estágio na Empresa X</div>
+                <div class="card-desc">Otimização de linhas de montagem automotivas e gestão de dados.</div>
+            </div>
+        </a>
+    </main>
+
+</body>
+</html>
